@@ -25,7 +25,7 @@ ls /dev/tty*
 ```
 Now plug in the UART-USB converter, and run the command again. The new serial port that popped up should be your UART-USB converter which is connected with Dorji DRF1276DM. 
 ### Some Important Notes
-The Arduino sketch and the Python script allows an automatic wireless communication between Dorji DRF1276DM et LoRa32u4 II, where :
+The Arduino sketch and the Python script allows an automatic wireless communication between Dorji DRF1276DM and LoRa32u4 II, where :
 - LoRa32u4 II sends the message "Hello Dorji" every 20 seconds to Dorji DRF1276DM
 - Once Dorji DRF1276DM receives the message "Hello Dorji", it sends automatically the message "Hello LoRa" to LoRa32u4 II
 
