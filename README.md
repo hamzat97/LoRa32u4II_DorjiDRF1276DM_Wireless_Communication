@@ -7,8 +7,13 @@ Dorji DRF1276DM is a type of long-range low data rate data radio modem based on 
 ## What do you need ?
 - Lora32u4 II board
 - Dorji DRF1276DM module
-- Raspberry Pi board
-- UART-USB converter
-- Two antennas 868 MHz
+- Raspberry Pi board (I use Raspberry Pi 3 Model B V1.2)
+- UART-USB converter (to connect Dorji DRF1276DM to the Raspberry through usb interface)
+- Two antennas 868 MHz 
 ## How do you use this work ?
 You can use this work as a base for any project using a wireless communication between the two devices mentioned above. you just need to make some minor tweaking before you start coding the interesting part of your project right away.
+### Arduino Setup
+
+### Dorji DRF1276DM Setup
+
+### Raspberry Setup
