@@ -6,3 +6,9 @@ LoRa is a wireless Technology that offers long range, low power and secure data 
 LoRa32u4 II is a light and low consumption board based on the Atmega32u4 MCU and HPD13 LoRa module and an USB battery charging circuit. Ideal for creating long range wireless networks that can exceed 2.4 GHz 802.15.4 and similar, it is more flexible than Bluetooth LE, doesn't require high power unlike WiFi and offers long range. For more information about LoRa32u4 II board, visit this link http://www.diymalls.com/index.php?route=product/product&product_id=88.
 # What is Dorji DRF1276DM ?
 Dorji DRF1276DM is a type of long-range low data rate data radio modem based on SX1276 from Semtech. It is a low cost transceiver module designed for operations in the unlicensed ISM (Industrial Scientific Medical) and LPRD bands. Frequency spectrum modulation/demodulation, multi-channel operation, high bandwidth efficiency and anti-blocking performance make DRF1276DM modules easy to realize the robust and reliable wireless link. For more information about Dorji DRF1276DM module, visit this link http://www.dorji.com/docs/data/DRF1276DM.pdf.
+# What do you need ?
+- Lora32u4 II board
+- Dorji DRF1276DM module
+- Raspberry Pi board
+- UART-USB converter
+- Two antennas 868 MHz
