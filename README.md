@@ -8,12 +8,13 @@ Dorji DRF1276DM is a type of long-range low data rate data radio modem based on 
 - Lora32u4 II board
 - Dorji DRF1276DM module
 - Raspberry Pi board (I use Raspberry Pi 3 Model B V1.2)
-- UART-USB converter (to connect Dorji DRF1276DM to the Raspberry through usb interface)
+- UART-USB converter (to connect Dorji DRF1276DM to Raspberry Pi through usb interface)
+- Mini USB cable (to upload the sketch to LoRa32u4 II)
 - Two antennas 868 MHz 
 ## How do you use this work ?
 You can use this work as a base for any project using a wireless communication between the two devices mentioned above. you just need to make some minor tweaking before you start coding the interesting part of your project right away.
 ### Arduino Setup
-
+First, you have to install adafruit driver (adafruit_drivers.exe in folder) if you're running Windows on your computer in order to be able to upload the sketch to LoRa32u4 II using the mini USB cable. On the other hand, you don't have to install this driver if you're using a Linux computer. Second, you should add LoRa library ( folder) in Arduino IDE by clicking to the "Sketch" menu and then Include Library -> Add .ZIP Library and wait for a while. Finally, I think beyond that the uploading of the sketch speaks for itself.     
 ### Dorji DRF1276DM Setup
-
+Dorji DRF1276DM is a module that needs some configuration before it is ready to be used. To do this this, we need to use a DRF tool software (DRF127xDM_V2.7.exe) and we can only use it on a Windows computer. First, you must connect Dorji DRF1276DM with UART_USB converter using the same wiring shown in Connection_Diagram image, and then connect the USB interface of the converter with one of the USB ports of your windows computer. After that, you open DRF tool software, you click on "Open" and you select the corresponding USB port, and then you select the wireless communication parameters as shown in image, and when you finish, you just click on "Write All". A success confirmation message should appear below. 
 ### Raspberry Setup
