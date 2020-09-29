@@ -31,4 +31,6 @@ The Arduino sketch and the Python script allows an automatic wireless communicat
 
 Also, the Python script allows you to have the possibilty of sending any message manually, on condition of not exceeding the maximum number of bytes that can be allocated to your message. To do this, all you should do is to type your message in the text box below the "Sending Message" button and then click this last one. Lora32u4 II will receive your message if it is listening, and you can visualize this received message just by opening the serial monitor already.
 
+I simplified the two codes as much as possible and I improved them by adding comments that make it easy to understand both of them and be able to modify them quickly. I am sure that you will understant everything you will read. 
+
 Finally, you can modify the codes as you want so as to adapt them to your own applications, just be careful with everything concerning the wireless communication side, and once again, I remain at your entire disposal, just contact me at my academic mail h.taous@ump.ac.ma if you have any questions or if you need any kind of assistance. 
