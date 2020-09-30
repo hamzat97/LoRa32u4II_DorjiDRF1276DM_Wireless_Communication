@@ -19,7 +19,7 @@ First, you have to install adafruit driver (adafruit_drivers.exe in LoRa32u4II s
 ### Dorji DRF1276DM Setup
 Dorji DRF1276DM is a module that needs some configuration before it is ready to be used. To do this, we need to use a DRF tool software (DRF_Tool.exe in DRF Tool folder) and we can only use it on a Windows computer. First, you must connect Dorji DRF1276DM with UART-USB converter using the same wiring shown in Raspberry_Dorji_Connection image, and then connect the USB interface of the converter with one of the USB ports of your Windows computer. After that, you open DRF tool software, you click on "Open", you select the corresponding USB port, then you select the wireless communication parameters as shown in Dorji_DRF1276DM_Configuration image, and you just click on "Write All" once you finish. A success confirmation message should appear below. 
 ### Raspberry Pi Setup
-After connecting Dorji DRF1276DM to one of the USB ports Raspberry Pi by using the UART_USB converter (as shown in Raspberry_Dorji_Connection image), You can use Thonny to open and launch the Python script (Script.py) and I think that is easy enough. Anyway, I would like to make some notes regarding the contents of the script. The Raspberry Pi recognises the UART_USB conveter as either a USB device and all you have to do is to find the corresponding serial port in the list of serial ports and then replace it in the Python script. For new people in the world of Raspberry Pi, you can find the name of this serial port by unplugging the UART-USB converter, and typing the following command in your terminal.
+After connecting Dorji DRF1276DM to one of the USB ports of Raspberry Pi using the UART_USB converter (Raspberry_Dorji_Connection image), You can use Thonny to open and launch the Python script and I think that is easy enough. Anyway, I would like to make some notes regarding the contents of the script. The Raspberry Pi recognises the UART_USB conveter as either a USB device and all you have to do is to find the corresponding serial port in the list of serial ports and then replace it in the Python script. For new people in the world of Raspberry Pi, you can find the name of this serial port by unplugging the UART-USB converter, and typing the following command in your terminal.
 ```
 ls /dev/tty*
 ```
@@ -27,9 +27,9 @@ Now plug in the UART-USB converter, and run the command again. The new serial po
 ### Some Important Notes
 The Arduino sketch and the Python script allows an automatic wireless communication between Dorji DRF1276DM and LoRa32u4 II, where :
 - LoRa32u4 II sends the message "Hello Dorji" every 20 seconds to Dorji DRF1276DM
-- Once Dorji DRF1276DM receives the message "Hello Dorji", it sends automatically the message "Hello LoRa" to LoRa32u4 II
+- Once Dorji DRF1276DM receives the message "Hello Dorji", it sends automatically "Hello LoRa" message to LoRa32u4 II
 
-Also, the Python script allows you to have the possibilty of sending any message manually, on condition of not exceeding the maximum number of bytes that can be allocated to your message. To do this, all you should do is to type your message in the text box below the "Sending Message" button and then click this last one. Lora32u4 II will receive your message if it is listening, and you can visualize this received message just by opening the serial monitor already.
+Also, the Python script allows you to have the possibilty of sending any message manually, on condition of not exceeding the maximum number of bytes that is already allocated to your message. To do this, all you should do is to type your message in the text box below the "Sending Message" button and then click this last one when you finish. Lora32u4 II will receive your message if it is listening, and you can visualize this received message just by opening the serial monitor already.
 
 I simplified the two codes as much as possible and I improved them by adding comments. These comments will make it easy to understand both of them and modify them quickly. I am sure that you will understand everything you read. 
 
