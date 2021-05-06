@@ -97,7 +97,7 @@ int Normalize ( int S ) {
  return S;
 }
 
-// normalization function
+// Request the message ID
 int Request_ByteID ( int N ) {
  switch(N) {
             case 0 : return 32; break;
